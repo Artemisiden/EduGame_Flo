@@ -17,16 +17,16 @@ public class TabGroup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //foreach (GameObject page in pages)
-        //{
-        //    if(page.activeInHierarchy)
-        //    {
-        //        foreach(TabButton tab in tabButtons)
-        //        {
-        //            tab.GetComponent<Collider2D>().enabled = true;
-        //        }
-        //    }
-        //}
+        foreach (GameObject page in pages)
+        {
+            if(page.activeInHierarchy)
+            {
+                foreach(TabButton tab in tabButtons)
+                {
+                    tab.GetComponent<Collider2D>().enabled = true;
+                }
+            }
+        }
     }
 
     public void Subscribe(TabButton button)
