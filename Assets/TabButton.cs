@@ -47,7 +47,7 @@ public class TabButton : MonoBehaviour, IPointerClickHandler, IPointerExitHandle
     void Start()
     {
         tabGroup.Subscribe(this);
-        //this.GetComponent<Collider2D>().enabled = true;
+        this.GetComponent<Collider2D>().enabled = true;
     }
 
     // Update is called once per frame
