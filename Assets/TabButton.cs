@@ -18,14 +18,7 @@ public class TabButton : MonoBehaviour, IPointerClickHandler, IPointerExitHandle
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(this.name == "StartButton")
-        {
-            tabGroup.selectedTab = render.GetComponent<TabButton>();
-        }
-        else
-        {
-            tabGroup.selectedTab = this;
-        }
+        tabGroup.selectedTab = this;
         tabGroup.ResetTabs();
         this.render.sprite = tabActive;
         this.render.sortingOrder = 3;
