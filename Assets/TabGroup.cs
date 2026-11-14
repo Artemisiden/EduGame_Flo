@@ -8,6 +8,7 @@ public class TabGroup : MonoBehaviour
     public List<TabButton> tabButtons;
     public TabButton selectedTab;
     public List<GameObject> pages;
+    public GameObject mainMenu;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,7 +16,7 @@ public class TabGroup : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         foreach (GameObject page in pages)
         {
@@ -24,6 +25,13 @@ public class TabGroup : MonoBehaviour
                 foreach(TabButton tab in tabButtons)
                 {
                     tab.GetComponent<Collider2D>().enabled = true;
+                }
+            }
+            else if(mainMenu.activeInHierarchy)
+            {
+                foreach(TabButton tab in tabButtons)
+                {
+                    tab.GetComponent<Collider2D>().enabled = false;
                 }
             }
         }
@@ -40,21 +48,18 @@ public class TabGroup : MonoBehaviour
     }
     public void ResetTabs()
     {
-        if(selectedTab != null)
+        foreach(TabButton button in tabButtons)
         {
-            foreach(TabButton button in tabButtons)
+            if(button == selectedTab)
             {
-                if(button == selectedTab)
-                {
-                    button.render.sprite = button.tabActive;
-                    button.render.sortingOrder = 3;
-                }
-                else
-                {
-                    button.render.sprite = button.tabIdle;
-                    button.render.sortingOrder = 0;
-                    button.page.SetActive(false);
-                }
+                button.render.sprite = button.tabActive;
+                button.render.sortingOrder = 3;
+            }
+            else
+            {
+                button.render.sprite = button.tabIdle;
+                button.render.sortingOrder = 0;
+                button.page.SetActive(false);
             }
         }
     }
