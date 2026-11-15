@@ -23,6 +23,11 @@ public class DelayManager : MonoBehaviour
         StartCoroutine(ActivationRoutine(target,delay));
     }
 
+    public void DeactiveWithDelay(GameObject target, float delay)
+    {
+        StartCoroutine(DeactivationRoutine(target,delay));
+    }
+
     private IEnumerator ActivationRoutine(GameObject target, float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -31,6 +36,16 @@ public class DelayManager : MonoBehaviour
             target.SetActive(true);
         }
     }
+
+    private IEnumerator DeactivationRoutine(GameObject target, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if(target != null)
+        {
+            target.SetActive(false);
+        }
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
