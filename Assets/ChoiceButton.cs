@@ -19,11 +19,13 @@ public class ChoiceButton : MonoBehaviour, IPointerClickHandler
         {
             anim.SetActive(true);
         }
+        PlayerManager.Instance.buttonClicked = false;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        PlayerManager.Instance.buttonClicked = false;
         if(duration>0)
         {
             foreach(GameObject anim in current)
