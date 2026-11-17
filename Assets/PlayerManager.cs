@@ -4,6 +4,7 @@ public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance;
     public bool buttonClicked;
+    public int level;
     
     private void Awake()
     {
