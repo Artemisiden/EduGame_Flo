@@ -11,11 +11,26 @@ public class ButtonPopController : MonoBehaviour
     {
         foreach (GameObject button in target)
         {
-            button.SetActive(false);
-            DelayManager.Instance.ActiveWithDelay(button, delay);
-            if(button.name == "Bar")
+            if(button.name == "Cycle")
             {
-                button.GetComponent<Animator>().speed = barSpeed;
+                DelayManager.Instance.ActiveWithDelay(button, 7);
+            }
+            else if (button.name == "Glass")
+            {
+                DelayManager.Instance.ActiveWithDelay(button, 16);
+            }
+            else if(button.name == "Earth")
+            {
+                DelayManager.Instance.DeactiveWithDelay(button, 16);
+            }
+            else
+            {
+                button.SetActive(false);
+                DelayManager.Instance.ActiveWithDelay(button, delay);
+                if(button.name == "Bar")
+                {
+                    button.GetComponent<Animator>().speed = barSpeed;
+                }
             }
         }
         PlayerManager.Instance.buttonClicked = false;
