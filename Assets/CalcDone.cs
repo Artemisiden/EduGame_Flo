@@ -70,6 +70,9 @@ public class CalcDone : MonoBehaviour, IPointerClickHandler
     // Update is called once per frame
     void Update()
     {
-        answer = float.Parse(text.text);
+        if(text.text!="")
+        {
+            answer = float.Parse(text.text);
+        }
     }
 }
