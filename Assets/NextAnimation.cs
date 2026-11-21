@@ -13,7 +13,10 @@ public class NextAnimation : MonoBehaviour
             {
                 foreach(GameObject anim in next)
                 {
-                    anim.SetActive(true);
+                    if(anim != null)
+                    {
+                        anim.SetActive(true);
+                    }
                 }
             }
         }

@@ -19,10 +19,6 @@ public class ButtonPopController : MonoBehaviour
             {
                 DelayManager.Instance.ActiveWithDelay(button, 16);
             }
-            else if(button.name == "Earth")
-            {
-                DelayManager.Instance.DeactiveWithDelay(button, 16);
-            }
             else
             {
                 button.SetActive(false);
