@@ -12,6 +12,7 @@ public class CalcDone : MonoBehaviour, IPointerClickHandler
     public List<GameObject> correct;
     public List<GameObject> close;
     public List<GameObject> wrong;
+    public List<GameObject> next;
     public void OnPointerClick(PointerEventData eventData)
     {
         clicks+=1;
@@ -34,6 +35,7 @@ public class CalcDone : MonoBehaviour, IPointerClickHandler
                         if(anim!=null)
                         {
                             anim.SetActive(true);
+                            clicks = 3;
                         }
                     }
                 }
@@ -51,12 +53,12 @@ public class CalcDone : MonoBehaviour, IPointerClickHandler
             else
             {
                 foreach(GameObject anim in wrong)
+                {
+                    if(anim!=null)
                     {
-                        if(anim!=null)
-                        {
-                            anim.SetActive(true);
-                        }
+                        anim.SetActive(true);
                     }
+                }
             }
         }
     }
@@ -73,6 +75,24 @@ public class CalcDone : MonoBehaviour, IPointerClickHandler
         if(text.text!="")
         {
             answer = float.Parse(text.text);
+        }
+        if (clicks == 3)
+        {
+            foreach(GameObject anim in next)
+            {
+                if(anim!=null)
+                {
+                    DelayManager.Instance.ActiveWithDelay(anim, 3);
+                }
+            }
+            foreach(GameObject anim in prev)
+            {
+                if(anim!=null)
+                {
+                    anim.SetActive(false);
+                }
+            }
+            this.gameObject.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
         }
     }
 }

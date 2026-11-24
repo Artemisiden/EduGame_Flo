@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 121061692}
   - component: {fileID: 121061691}
   - component: {fileID: 121061693}
+  - component: {fileID: 121061694}
   m_Layer: 0
   m_Name: Intro1ALoop
   m_TagString: Untagged
@@ -186,7 +187,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: dea0cb71d367e544da9dab3563cd1cb3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -194,7 +195,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &121061692
@@ -222,7 +223,7 @@ Animator:
   m_GameObject: {fileID: 121061690}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5fbee5894f0b4394cbadaea1ea459fe3, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -234,6 +235,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &121061694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121061690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 121061693}
+  spriteRenderer: {fileID: 121061691}
+  controllerRef:
+    m_AssetGUID: 5fbee5894f0b4394cbadaea1ea459fe3
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 0}
 --- !u!1 &125391889
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +304,7 @@ GameObject:
   - component: {fileID: 257259544}
   - component: {fileID: 257259543}
   - component: {fileID: 257259545}
+  - component: {fileID: 257259546}
   m_Layer: 0
   m_Name: Intro1Loop
   m_TagString: Untagged
@@ -338,7 +361,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 63ebc6fe9a158884f8f8aba246fcb7a9, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -346,7 +369,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &257259544
@@ -374,7 +397,7 @@ Animator:
   m_GameObject: {fileID: 257259542}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b9abd61f532e92e4f93b943cacb9fa2e, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -386,6 +409,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &257259546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257259542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 257259545}
+  spriteRenderer: {fileID: 257259543}
+  controllerRef:
+    m_AssetGUID: b9abd61f532e92e4f93b943cacb9fa2e
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 0}
 --- !u!1 &261135973
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +841,7 @@ GameObject:
   - component: {fileID: 739533364}
   - component: {fileID: 739533363}
   - component: {fileID: 739533365}
+  - component: {fileID: 739533366}
   m_Layer: 0
   m_Name: Intro1BSub
   m_TagString: Untagged
@@ -853,7 +898,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: e334d7379d614124ca0cc2438ff68430, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -861,7 +906,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &739533364
@@ -889,7 +934,7 @@ Animator:
   m_GameObject: {fileID: 739533362}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bc84d1e8d216e0745b1d961eaaeb2783, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -901,6 +946,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &739533366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739533362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 739533365}
+  spriteRenderer: {fileID: 739533363}
+  controllerRef:
+    m_AssetGUID: bc84d1e8d216e0745b1d961eaaeb2783
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 0}
 --- !u!1 &838757425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1157,7 @@ GameObject:
   - component: {fileID: 936546766}
   - component: {fileID: 936546765}
   - component: {fileID: 936546767}
+  - component: {fileID: 936546768}
   m_Layer: 0
   m_Name: Intro1ASub
   m_TagString: Untagged
@@ -1147,7 +1214,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: aaccc5d7ce8b3024594555f122b70041, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1155,7 +1222,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &936546766
@@ -1183,7 +1250,7 @@ Animator:
   m_GameObject: {fileID: 936546764}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ca0fa6c656bb21444b8c9d996fe3263e, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1195,6 +1262,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &936546768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936546764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 936546767}
+  spriteRenderer: {fileID: 936546765}
+  controllerRef:
+    m_AssetGUID: ca0fa6c656bb21444b8c9d996fe3263e
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 0}
 --- !u!1 &971955033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,6 +1296,7 @@ GameObject:
   - component: {fileID: 971955038}
   - component: {fileID: 971955037}
   - component: {fileID: 971955036}
+  - component: {fileID: 971955039}
   m_Layer: 0
   m_Name: Intro1B
   m_TagString: Untagged
@@ -1279,7 +1368,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 99501e8eb24a23546862bb630a93fa48, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1287,7 +1376,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!82 &971955036
@@ -1412,7 +1501,7 @@ Animator:
   m_GameObject: {fileID: 971955033}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 928ff690d96d67845b9c5827b8503712, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1424,6 +1513,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &971955039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971955033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 971955038}
+  spriteRenderer: {fileID: 971955035}
+  controllerRef:
+    m_AssetGUID: 928ff690d96d67845b9c5827b8503712
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 971955036}
 --- !u!1 &986584841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1545,7 @@ GameObject:
   - component: {fileID: 986584843}
   - component: {fileID: 986584842}
   - component: {fileID: 986584844}
+  - component: {fileID: 986584845}
   m_Layer: 0
   m_Name: Intro1Sub
   m_TagString: Untagged
@@ -1491,7 +1602,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 52ddf818e9381944d8f0691942fff5e9, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1499,7 +1610,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &986584843
@@ -1527,7 +1638,7 @@ Animator:
   m_GameObject: {fileID: 986584841}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b18cbd57af3c4b64fb96eef5aa74b04e, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1539,6 +1650,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &986584845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986584841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 986584844}
+  spriteRenderer: {fileID: 986584842}
+  controllerRef:
+    m_AssetGUID: b18cbd57af3c4b64fb96eef5aa74b04e
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 0}
 --- !u!1 &1074490895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,6 +1682,7 @@ GameObject:
   - component: {fileID: 1074490897}
   - component: {fileID: 1074490896}
   - component: {fileID: 1074490898}
+  - component: {fileID: 1074490899}
   m_Layer: 0
   m_Name: Intro1A2Sub
   m_TagString: Untagged
@@ -1606,7 +1739,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 7e217b0a0b5230843942a4235659c4e8, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1614,7 +1747,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1074490897
@@ -1642,7 +1775,7 @@ Animator:
   m_GameObject: {fileID: 1074490895}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d220a4e1c238125408d32306d16d324a, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1654,6 +1787,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1074490899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074490895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 1074490898}
+  spriteRenderer: {fileID: 1074490896}
+  controllerRef:
+    m_AssetGUID: d220a4e1c238125408d32306d16d324a
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 0}
 --- !u!1 &1196382893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,6 +2001,7 @@ GameObject:
   - component: {fileID: 1249164694}
   - component: {fileID: 1249164693}
   - component: {fileID: 1249164695}
+  - component: {fileID: 1249164696}
   m_Layer: 0
   m_Name: Intro1A2
   m_TagString: Untagged
@@ -1903,7 +2058,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 2c15324d39ec58a4e9d5591982f5962b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1911,7 +2066,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1249164692
@@ -2036,7 +2191,7 @@ Animator:
   m_GameObject: {fileID: 1249164690}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 806517328a44c494ca12c34f74079738, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2063,6 +2218,27 @@ MonoBehaviour:
   next:
   - {fileID: 1915738851}
   - {fileID: 1914398231}
+--- !u!114 &1249164696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249164690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 1249164694}
+  spriteRenderer: {fileID: 1249164691}
+  controllerRef:
+    m_AssetGUID: 806517328a44c494ca12c34f74079738
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 1249164693}
 --- !u!1 &1647040891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,6 +2252,7 @@ GameObject:
   - component: {fileID: 1647040894}
   - component: {fileID: 1647040895}
   - component: {fileID: 1647040896}
+  - component: {fileID: 1647040897}
   m_Layer: 0
   m_Name: Intro1A1
   m_TagString: Untagged
@@ -2132,7 +2309,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 9b7479c034dae034e87f2b72a604881f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2140,7 +2317,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1647040893
@@ -2168,7 +2345,7 @@ Animator:
   m_GameObject: {fileID: 1647040891}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8de54d241a188c042a43b0d7ed996c9f, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2292,6 +2469,27 @@ MonoBehaviour:
   next:
   - {fileID: 1915738851}
   - {fileID: 1914398231}
+--- !u!114 &1647040897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647040891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 1647040894}
+  spriteRenderer: {fileID: 1647040892}
+  controllerRef:
+    m_AssetGUID: 8de54d241a188c042a43b0d7ed996c9f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 1647040895}
 --- !u!1 &1672742597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,6 +2657,7 @@ GameObject:
   - component: {fileID: 1781746875}
   - component: {fileID: 1781746877}
   - component: {fileID: 1781746878}
+  - component: {fileID: 1781746879}
   m_Layer: 0
   m_Name: Intro1
   m_TagString: Untagged
@@ -2515,7 +2714,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 40553b767d890b34ab6bd1eba53e7f91, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2523,7 +2722,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1781746874
@@ -2553,7 +2752,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: ae0209b908e62894f9aaf59df469f1b3, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2648,7 +2847,7 @@ Animator:
   m_GameObject: {fileID: 1781746872}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 70a9323a6e057bf45a9418486b69ee1a, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2692,6 +2891,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   next:
   - {fileID: 257259542}
+--- !u!114 &1781746879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781746872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  animator: {fileID: 1781746876}
+  spriteRenderer: {fileID: 1781746873}
+  controllerRef:
+    m_AssetGUID: 70a9323a6e057bf45a9418486b69ee1a
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 1781746875}
 --- !u!1 &1802937288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2703,6 +2923,7 @@ GameObject:
   - component: {fileID: 1802937290}
   - component: {fileID: 1802937289}
   - component: {fileID: 1802937291}
+  - component: {fileID: 1802937292}
   m_Layer: 0
   m_Name: Intro1A1Sub
   m_TagString: Untagged
@@ -2759,7 +2980,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 25b9588b25b40e5469ad8b96fc215b8d, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2767,7 +2988,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1802937290
@@ -2795,7 +3016,7 @@ Animator:
   m_GameObject: {fileID: 1802937288}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bdede5cfbaad1084f8636687733e39da, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2807,6 +3028,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1802937292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802937288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 1802937291}
+  spriteRenderer: {fileID: 1802937289}
+  controllerRef:
+    m_AssetGUID: bdede5cfbaad1084f8636687733e39da
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 0}
 --- !u!1 &1803275439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2820,6 +3062,7 @@ GameObject:
   - component: {fileID: 1803275444}
   - component: {fileID: 1803275443}
   - component: {fileID: 1803275445}
+  - component: {fileID: 1803275446}
   m_Layer: 0
   m_Name: TitleCall
   m_TagString: Untagged
@@ -2876,7 +3119,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 061501123d84d5742b6ebd7319ab553e, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2884,7 +3127,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1803275441
@@ -3009,7 +3252,7 @@ Animator:
   m_GameObject: {fileID: 1803275439}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 17cceb3a8f50bcf4ca0305c141bde03e, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3034,6 +3277,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetScene
   toActivate: MainMenu
+--- !u!114 &1803275446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803275439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 1803275444}
+  spriteRenderer: {fileID: 1803275440}
+  controllerRef:
+    m_AssetGUID: 17cceb3a8f50bcf4ca0305c141bde03e
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 1803275443}
 --- !u!1 &1824846500
 GameObject:
   m_ObjectHideFlags: 0
@@ -3048,6 +3312,7 @@ GameObject:
   - component: {fileID: 1824846504}
   - component: {fileID: 1824846505}
   - component: {fileID: 1824846506}
+  - component: {fileID: 1824846507}
   m_Layer: 0
   m_Name: Intro1A
   m_TagString: Untagged
@@ -3104,7 +3369,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: b14356a136ee20e43a35e5065bd1f936, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3112,7 +3377,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1824846502
@@ -3140,7 +3405,7 @@ Animator:
   m_GameObject: {fileID: 1824846500}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c7e24834269600b4c8f07d68c3b86304, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3283,6 +3548,27 @@ MonoBehaviour:
   - {fileID: 1672742597}
   delay: 9
   barSpeed: 1
+--- !u!114 &1824846507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824846500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 1824846503}
+  spriteRenderer: {fileID: 1824846501}
+  controllerRef:
+    m_AssetGUID: c7e24834269600b4c8f07d68c3b86304
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 1824846504}
 --- !u!1 &1912417734
 GameObject:
   m_ObjectHideFlags: 0
@@ -3457,6 +3743,7 @@ GameObject:
   - component: {fileID: 1914398233}
   - component: {fileID: 1914398232}
   - component: {fileID: 1914398234}
+  - component: {fileID: 1914398235}
   m_Layer: 0
   m_Name: Intro2Sub
   m_TagString: Untagged
@@ -3513,7 +3800,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: eaf2ed80060c0e54bbf4ea493a8b6f46, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3521,7 +3808,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1914398233
@@ -3549,7 +3836,7 @@ Animator:
   m_GameObject: {fileID: 1914398231}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 405dfbe545a85fa4d953a3f95b397de8, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3561,6 +3848,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1914398235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914398231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 1914398234}
+  spriteRenderer: {fileID: 1914398232}
+  controllerRef:
+    m_AssetGUID: 405dfbe545a85fa4d953a3f95b397de8
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 0}
 --- !u!1 &1915738851
 GameObject:
   m_ObjectHideFlags: 0
@@ -3574,6 +3882,7 @@ GameObject:
   - component: {fileID: 1915738855}
   - component: {fileID: 1915738854}
   - component: {fileID: 1915738856}
+  - component: {fileID: 1915738857}
   m_Layer: 0
   m_Name: Intro2
   m_TagString: Untagged
@@ -3630,7 +3939,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: e6ebed7431051d942ba7bc2bfbaab5b2, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3638,7 +3947,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1915738853
@@ -3763,7 +4072,7 @@ Animator:
   m_GameObject: {fileID: 1915738851}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9a7e8edc635ae414098eaa633d7f45ab, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3789,6 +4098,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextAnimation
   next:
   - {fileID: 1803275439}
+--- !u!114 &1915738857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915738851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5d84e2d36267e4c849b90a00372da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddressableAnimator
+  animator: {fileID: 1915738855}
+  spriteRenderer: {fileID: 1915738852}
+  controllerRef:
+    m_AssetGUID: 9a7e8edc635ae414098eaa633d7f45ab
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  audio: {fileID: 1915738854}
 --- !u!1 &2033548774
 GameObject:
   m_ObjectHideFlags: 0
