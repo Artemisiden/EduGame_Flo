@@ -1,5 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -13,6 +15,7 @@ public class CalcDone : MonoBehaviour, IPointerClickHandler
     public List<GameObject> close;
     public List<GameObject> wrong;
     public List<GameObject> next;
+    private bool isWrong = false;
     public void OnPointerClick(PointerEventData eventData)
     {
         clicks+=1;
@@ -58,6 +61,11 @@ public class CalcDone : MonoBehaviour, IPointerClickHandler
                     {
                         anim.SetActive(true);
                     }
+                    if(clicks==3)
+                    {
+                        DelayManager.Instance.DeactiveWithDelay(anim, 1.68f);
+                        isWrong = true;
+                    }
                 }
             }
         }
@@ -80,9 +88,29 @@ public class CalcDone : MonoBehaviour, IPointerClickHandler
         {
             foreach(GameObject anim in next)
             {
-                if(anim!=null)
+                if(isWrong == true)
                 {
-                    DelayManager.Instance.ActiveWithDelay(anim, 3);
+                    if(anim.name == "2.5persen")
+                    {
+                        DelayManager.Instance.ActiveWithDelay(anim, 4.68f);
+                        DelayManager.Instance.DeactiveWithDelay(anim, 14.68f);
+                    }
+                    else
+                    {
+                        DelayManager.Instance.ActiveWithDelay(anim, 1.68f);
+                    }
+                }
+                else if(anim!=null)
+                {
+                    if(anim.name == "2.5persen")
+                    {
+                        DelayManager.Instance.ActiveWithDelay(anim, 6f);
+                        DelayManager.Instance.DeactiveWithDelay(anim, 16f);
+                    }
+                    else
+                    {
+                        DelayManager.Instance.ActiveWithDelay(anim, 3f);
+                    }
                 }
             }
             foreach(GameObject anim in prev)

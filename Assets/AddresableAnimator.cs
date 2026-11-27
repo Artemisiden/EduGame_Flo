@@ -62,7 +62,7 @@ public class AddressableAnimator : MonoBehaviour
 
         if (hideRendererUntilLoaded && spriteRenderer != null)
         {
-        //    spriteRenderer.enabled = false;
+            spriteRenderer.enabled = false;
         }
 
         loadHandle = controllerRef.LoadAssetAsync();

@@ -30,6 +30,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c836b08eb38f4d4abefc696115d0ed8
+    m_Address: Assets/Asset/Animation/Chapter1_1/Chapter1_1S4P2/Chapter1_1S4P2.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 25f4994e735bdb14da305cf529817ffc
     m_Address: Assets/Asset/Animation/Chapter1_1/Chapter1_1S2B/Chapter1_1S2B.controller
     m_ReadOnly: 0
@@ -42,6 +47,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 405dfbe545a85fa4d953a3f95b397de8
     m_Address: Assets/Asset/Animation/Intro/Intro2/Intro2Sub/Intro2Sub.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4513041f01cc07d40be036ca692f6596
+    m_Address: Assets/Asset/Animation/Chapter1_1/Chapter1_1S4P1/Chapter1_1S4P1.controller
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -120,6 +130,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afc255dc5f713904eb21ebef066c41b7
+    m_Address: Assets/Asset/Animation/Chapter1_1/Chapter1_1S4P1/Chapter1_1S4P1Sub/Chapter1_1S4P1Sub.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b11e0ac368403314aaf4a97cea9563ab
     m_Address: Assets/Asset/Animation/Chapter1_1/Chapter1_1S3B/Chapter1_1S3BSub/Chapter1_1S3BSub.controller
     m_ReadOnly: 0
@@ -142,6 +157,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc84d1e8d216e0745b1d961eaaeb2783
     m_Address: Assets/Asset/Animation/Intro/Intro1B/Intro1BSub/Intro1BSub.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bde53252736e00448a74ae3c8e5002b4
+    m_Address: Assets/Asset/Animation/Chapter1_1/Chapter1_1S4P2/Chapter1_1S4P2Sub/Chapter1_1S4P2Sub.controller
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
