@@ -10,7 +10,10 @@ public class DisableObject : MonoBehaviour
     {
         foreach(GameObject obj in objects)
         {
-            obj.SetActive(false);
+            if(obj!=null)
+            {
+                obj.SetActive(false);
+            }
         }
     }
     void Start()

@@ -95,6 +95,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d46b0fde1f88e541a8904c7b53630fb
+    m_Address: Assets/Asset/Animation/Streams/Streams.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 806517328a44c494ca12c34f74079738
     m_Address: Assets/Asset/Animation/Intro/Intro1A2/Intro1A2.controller
     m_ReadOnly: 0
