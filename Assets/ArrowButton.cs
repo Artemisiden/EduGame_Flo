@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class ArrowButton : MonoBehaviour, IPointerClickHandler
 {
     public List<GameObject> prev;
-    public string toActivate;
     public List<GameObject> next;
+    public GameObject flip;
     public void OnPointerClick(PointerEventData eventData)
     {
         foreach(GameObject obj in prev)
@@ -18,28 +18,9 @@ public class ArrowButton : MonoBehaviour, IPointerClickHandler
             }
         }
 
-        foreach (GameObject obj in SceneManager.GetSceneByName("Base").GetRootGameObjects())
+        if (flip != null)
         {
-            if(obj.name == toActivate)
-            {
-                obj.SetActive(true);
-                return;
-            }
-            else
-            {
-                Transform child = obj.transform.Find("Pages");
-                {
-                    if(child != null)
-                    {
-                        Transform grandChild = child.transform.Find(toActivate);
-                        if(grandChild != null)
-                        {
-                            grandChild.gameObject.SetActive(true);
-                            return;
-                        }
-                    }
-                }
-            }
+            flip.SetActive(true);
         }
 
         foreach(GameObject obj in next)
