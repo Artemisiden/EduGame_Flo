@@ -65,6 +65,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 595fa43c92c9ec841a0ba3b0e24e876e
+    m_Address: Assets/Asset/Animation/StarBottle/StarBottle.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5b30b45d3e030664ca06cb5cc41af6bf
     m_Address: Assets/Asset/Animation/Chapter1_1/Chapter1_1S3A/Chapter1_1S3A.controller
     m_ReadOnly: 0

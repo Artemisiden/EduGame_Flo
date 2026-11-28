@@ -1,38 +1,52 @@
+using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class WaterPour : MonoBehaviour, IDragHandler, IEndDragHandler
+public class ClickObject : MonoBehaviour, IPointerClickHandler
 {
-    private float tiltSensitivity = 0.2f;
-    [SerializeField] private float maxTiltAngle = 25f;
-    [SerializeField] private float returnSpeed = 10f;
+    public List<GameObject> prev;
+    public List<GameObject> next;
+    public GameObject air;
+    public Vector3 endPosition;
+    public AudioSource audio;
 
-    private float targetAngle = 0f;
-    private bool isDragging = false;
-    public void OnDrag(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData eventData)
     {
-        isDragging = true;
-
-        targetAngle -= eventData.delta.x * tiltSensitivity;
-        targetAngle = Mathf.Clamp(targetAngle, -maxTiltAngle, maxTiltAngle);
-    }
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        isDragging = false;
-        targetAngle = 0f;
+        this.gameObject.transform.position = endPosition;
+        this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 65);
+        foreach(GameObject obj in prev)
+        {
+            if(obj!=null)
+            {
+                obj.SetActive(false);
+            }
+        }
+        foreach(GameObject obj in next)
+        {
+            if(obj!=null)
+            {
+                obj.SetActive(true);
+            }
+            if(obj.name == "Streams")
+            {
+                DelayManager.Instance.DeactiveWithDelay(obj, 1);
+            }
+        }
+        air.transform.position = new Vector3(0, 2.48f, 0);
+        DelayManager.Instance.DeactiveWithDelay(air, 0.6f);
+        DelayManager.Instance.DeactiveWithDelay(this.gameObject, 1);
+        audio.Play();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        float currentZ = Mathf.LerpAngle(transform.eulerAngles.z, targetAngle, Time.deltaTime * returnSpeed);
-        transform.rotation = Quaternion.Euler(0f, 0f, currentZ);
+        
     }
 }

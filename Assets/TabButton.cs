@@ -23,7 +23,10 @@ public class TabButton : MonoBehaviour, IPointerClickHandler, IPointerExitHandle
         this.render.sprite = tabActive;
         this.render.sortingOrder = 3;
         flip.SetActive(true);
-        DelayManager.Instance.ActiveWithDelay(page,1.2f);
+        if(page != null)
+        {
+            DelayManager.Instance.ActiveWithDelay(page,1.2f);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
